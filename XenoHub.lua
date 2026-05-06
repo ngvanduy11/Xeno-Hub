@@ -2018,7 +2018,7 @@ function Kz.CreateMain(Y)
 	r.Position = UDim2.new(.5, 0, .5, 0);
 	r.Selectable = true;
 	r.Size = UDim2.new(1, 30, 1, 30);
-	r.Image = "rbxassetid://129781592728096";
+	r.Image = "rbxassetid://122325778895055";
 	r.ScaleType = Enum.ScaleType.Slice;
 	r.SliceCenter = Rect.new(15, 15, 175, 175);
 	r.SliceScale = 1.3;
@@ -2042,7 +2042,7 @@ function Kz.CreateMain(Y)
 	m.Transparency = .8;
 	dz.ReadyForGuiLoaded = true;
 	local y = Instance.new("ImageLabel", z);
-	y.Image = "rbxassetid://131407996827614";
+	y.Image = "rbxassetid://122325778895055";
 	y.BackgroundTransparency = 1;
 	y.ImageTransparency = .8;
 	y.Position = UDim2.new(0, -50, 0, -80);
@@ -2092,7 +2092,7 @@ function Kz.CreateMain(Y)
 	local c = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[2]);
 	local H = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[3]);
 	local S = b .. ("," .. (c .. ("," .. H)));
-	M.Text = "<font color=\"rgb(" .. (S .. ")\">the_real_Panda Hub </font> : Blox Fruits");
+	M.Text = "<font color=\"rgb(" .. (S .. ")\">Xeno Hub </font> : Blox Fruits");
 	K.Name = "Background1";
 	K.Parent = g;
 	K.Position = UDim2.new(0, 5, 0, 0);
