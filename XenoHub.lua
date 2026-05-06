@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/attack-module.lua"))()
 local Y = game.Players;
 local d = Y.LocalPlayer;
 local R = d.Character.HumanoidRootPart;
@@ -2017,7 +2018,7 @@ function Kz.CreateMain(Y)
 	r.Position = UDim2.new(.5, 0, .5, 0);
 	r.Selectable = true;
 	r.Size = UDim2.new(1, 30, 1, 30);
-	r.Image = "rbxassetid://122325778895055";
+	r.Image = "rbxassetid://129781592728096";
 	r.ScaleType = Enum.ScaleType.Slice;
 	r.SliceCenter = Rect.new(15, 15, 175, 175);
 	r.SliceScale = 1.3;
@@ -2028,7 +2029,7 @@ function Kz.CreateMain(Y)
 	local U = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[2]);
 	local C = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[3]);
 	local v = i .. ("," .. (U .. ("," .. C)));
-	M.Text = "<font color=\"rgb(" .. (v .. ")\">the_real_Panda Hub </font> : Blox Fruits");
+	M.Text = "<font color=\"rgb(" .. (v .. ")\">Xeno Hub </font> : Blox Fruits");
 	z = Instance.new("ImageLabel");
 	z.Name = "MainContainer";
 	z.Parent = Q;
@@ -2041,7 +2042,7 @@ function Kz.CreateMain(Y)
 	m.Transparency = .8;
 	dz.ReadyForGuiLoaded = true;
 	local y = Instance.new("ImageLabel", z);
-	y.Image = "rbxassetid://122325778895055";
+	y.Image = "rbxassetid://131407996827614";
 	y.BackgroundTransparency = 1;
 	y.ImageTransparency = .8;
 	y.Position = UDim2.new(0, -50, 0, -80);
