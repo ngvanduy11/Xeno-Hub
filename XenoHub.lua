@@ -2075,7 +2075,7 @@ function Kz.CreateMain(Y)
 	F.BackgroundTransparency = 1.0;
 	F.Position = UDim2.new(0, 5, 0, dz.T1 and 5 or 0);
 	F.Size = UDim2.new(0, dz.T1 and 30 or 25, 0, dz.T1 and 15 or 25);
-	F.Image = "rbxassetid://122444592900332";
+	F.Image = "rbxassetid://122325778895055";
 	M.Name = "TextLabelMain";
 	M.Parent = w;
 	M.BackgroundColor3 = Color3.fromRGB(230, 230, 230);
@@ -2092,7 +2092,7 @@ function Kz.CreateMain(Y)
 	local c = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[2]);
 	local H = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[3]);
 	local S = b .. ("," .. (c .. ("," .. H)));
-	M.Text = "<font color=\"rgb(" .. (S .. ")\">the_real_Panda Hub </font> : Blox Fruits");
+	M.Text = "<font color=\"rgb(" .. (S .. ")\">"Xeno Hub </font> : Blox Fruits");
 	K.Name = "Background1";
 	K.Parent = g;
 	K.Position = UDim2.new(0, 5, 0, 0);
