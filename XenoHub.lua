@@ -1,8 +1,8 @@
 -- RealRyzu
 if getgenv().RealRyzu then 
-	if game.CoreGui:FindFirstChild("KuKi Hub GUI") then
+	if game.CoreGui:FindFirstChild("Xenon Hub GUI") then
 		for i, v in ipairs(game.CoreGui:GetChildren()) do
-			if string.find(v.Name,  "KuKi Hub") then
+			if string.find(v.Name,  "Xenon Hub") then
 				v:Destroy()
 			end
 		end
@@ -113,11 +113,11 @@ local function makeDraggable(topBarObject, object)
 	uis.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			local delta = input.Position - dragStart
-			if not kuki and zzz then
+			if not xenon and zzz then
 				TweenService:Create(object, TweenInfo.new(DisableAnimation and 0 or 0.35, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
 					Position = UDim2.new(startPosition.X.Scale, startPosition.X.Offset + delta.X, startPosition.Y.Scale, startPosition.Y.Offset + delta.Y)
 				}):Play()
-			elseif not kuki and not zzz then
+			elseif not xenon and not zzz then
 				object.Position = UDim2.new(startPosition.X.Scale, startPosition.X.Offset + delta.X, startPosition.Y.Scale, startPosition.Y.Offset + delta.Y)
 			end
 		end
@@ -126,7 +126,7 @@ end
 
 Library_Function.Gui = Instance.new('ScreenGui')
 Library_Function.Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.Gui.Name = 'KuKi Hub GUI'
+Library_Function.Gui.Name = 'Xenon Hub GUI'
 Library_Function.Gui.Enabled = false
 
 getgenv().ReadyForGuiLoaded = false
@@ -142,11 +142,11 @@ end)
 
 Library_Function.NotiGui = Instance.new('ScreenGui')
 Library_Function.NotiGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.NotiGui.Name = 'KuKi Hub Notification'
+Library_Function.NotiGui.Name = 'Xenon Hub Notification'
 
 Library_Function.HideGui = Instance.new('ScreenGui')
 Library_Function.HideGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Library_Function.HideGui.Name = 'KuKi Hub Btn'
+Library_Function.HideGui.Name = 'Xenon Hub Btn'
 
 
 local btnHide = Instance.new('ImageButton', Library_Function.HideGui)
@@ -185,9 +185,9 @@ imgHide.Position = UDim2.new(0.5, 0, 0.5, 0)
 
 Library.ToggleUI = function()
 	getgenv().UIToggled = not getgenv().UIToggled
-	if game.CoreGui:FindFirstChild("KuKi Hub GUI") then
+	if game.CoreGui:FindFirstChild("Xenon Hub GUI") then
 		for a, b in ipairs(game.CoreGui:GetChildren()) do
-			if b.Name == "KuKi Hub GUI" then
+			if b.Name == "Xenon Hub GUI" then
 				b.Enabled = getgenv().UIToggled
 			end
 		end
@@ -195,9 +195,9 @@ Library.ToggleUI = function()
 end
 
 Library.DestroyUI = function()
-	if game.CoreGui:FindFirstChild("KuKi Hub GUI") then
+	if game.CoreGui:FindFirstChild("Xenon Hub GUI") then
 		for i, v in ipairs(game.CoreGui:GetChildren()) do
-			if string.find(v.Name, "KuKi Hub") then
+			if string.find(v.Name, "Xenon Hub") then
 				v:Destroy()
 			end
 		end
@@ -205,9 +205,9 @@ Library.DestroyUI = function()
 end
 
 Library.DestroyUI = function()
-	if game.CoreGui:FindFirstChild("KuKi Hub GUI") then
+	if game.CoreGui:FindFirstChild("Xenon Hub GUI") then
 		for i, v in ipairs(game.CoreGui:GetChildren()) do
-			if string.find(v.Name,  "KuKi Hub") then
+			if string.find(v.Name,  "Xenon Hub") then
 				v:Destroy()
 			end
 		end
@@ -488,7 +488,7 @@ function Library:CreateWindow(Setting)
         getgenv().UIColor["Logo Image"] = Setting.Image
     end
     
-	local kuki = false
+	local xenon = false
 	cac = false
 
 	local Main = Instance.new("Frame")
@@ -606,7 +606,7 @@ function Library:CreateWindow(Setting)
 	local colorG = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[2])
 	local colorB = tostring(Library_Function.Getcolor(getgenv().UIColor['Title Text Color'])[3])
 	local color = colorR .. ',' .. colorG .. ',' .. colorB
-    TextLabelMain.Text = tostring(TitleNameMain or "KuKi Hub - Blox Fruit")
+    TextLabelMain.Text = tostring(TitleNameMain or "Xenon Hub - Blox Fruit")
 	TextLabelMain.TextColor3 = Color3.fromRGB(0, 0, 0)
 
 	PageControl.Name = "Background1"
@@ -3753,9 +3753,9 @@ pcall(function()
 end);
 
 local Window = Library:CreateWindow({
-    Title = "KuKi Hub - Blox Fruit",
+    Title = "Xenon Hub - Blox Fruit",
     SubTitle = "",
-    SaveFolder = "KuKiHub.json",
+    SaveFolder = "XenonHub.json",
     Image = "rbxassetid://129872344726942"
 })
 
@@ -3789,35 +3789,35 @@ local MiscTab = Window:AddTab("Tab | Misc")
 task.delay(2, function()
 	pcall(function()
 		Library:Notify({
-			Title = "KuKi Hub",
+			Title = "Xenon Hub",
 			Content = "Script loaded successfully! Welcome., " .. game.Players.LocalPlayer.Name .. " ",
 			Icon = "rocket",
 			Duration = 6
 		});
 	end);
-	Library:Notify({Title = "KuKi Hub", Content = "Script loaded! Welcome, " .. game.Players.LocalPlayer.Name, Icon = "star", Duration = 5});
+	Library:Notify({Title = "Xenon Hub", Content = "Script loaded! Welcome, " .. game.Players.LocalPlayer.Name, Icon = "star", Duration = 5});
 end);
 
-InfoTab:AddSection(" KuKi Hub ");
+InfoTab:AddSection(" Xenon Hub ");
 InfoTab:AddParagraph({
-	Title = "KuKi Hub",
-	Desc = "Version: R6.1 | Game: Blox Fruits\nMade for the KuKi Community\nAll features are free to use."
+	Title = "Xenon Hub",
+	Desc = "Version: R6.1 | Game: Blox Fruits\nMade for the Xenon Community\nAll features are free to use."
 });
 InfoTab:AddParagraph({
 	Title = " Discord Server",
-	Desc = "Join our community for updates, support and more!\nLink: discord.gg/kuki-hub"
+	Desc = "Join our community for updates, support and more!\nLink: https://discord.gg/FYz8wpMVHn"
 });
 InfoTab:AddButton({
-	Title = "Join KuKi Community Discord",
+	Title = "Join Xenon Community Discord",
 	Desc = "Click to open the Discord invite link",
 	Callback = function()
-		setclipboard("https://discord.gg/f4K5sDwKkn");
-		Library:Notify({Title = "KuKi Hub", Content = "Discord link copied to clipboard!\ndiscord.gg/kuki-hub", Icon = "bell", Duration = 5});
+		setclipboard("https://discord.gg/FYz8wpMVHn");
+		Library:Notify({Title = "Xenon Hub", Content = "Discord link copied to clipboard!\nhttps://discord.gg/FYz8wpMVHn", Icon = "bell", Duration = 5});
 	end
 });
 InfoTab:AddParagraph({
 	Title = " Credits",
-	Desc = "Dev: RealRyzu\nOwner: RealRyzu\n\nKuKi Hub R6.1 - Blox Fruits"
+	Desc = "Admin : Van Duy\nXenon Hub R6.1 - Blox Fruits"
 });
 
 -- Notificacao helper para Farm Hop (usa Library:Notify)
@@ -6656,7 +6656,7 @@ task.spawn(function()
 	end;
 end);
 
--- LOOP 1: LEVEL FARM (KuKi Hub)
+-- LOOP 1: LEVEL FARM (Xenon Hub)
 spawn(function()
 	while wait(0.2) do
 		if _G.EclipseLevel and _G.EclipseStartFarm then
@@ -8904,7 +8904,7 @@ task.spawn(function()
 			if _isSpecialChestItem() then
 				_chestTweenActive = false;
 				_G.Settings.Farm["Auto Farm Chest Tween"] = false;
-				Library:Notify({Title = "KuKi Hub", Content = "Item especial encontrado! Auto Chest parado.", Icon = "bell", Duration = 6});
+				Library:Notify({Title = "Xenon Hub", Content = "Item especial encontrado! Auto Chest parado.", Icon = "bell", Duration = 6});
 				return;
 			end;
 			-- Coleta todos os baus presentes agora (snapshot)
@@ -8924,7 +8924,7 @@ task.spawn(function()
 				if _isSpecialChestItem() then
 					_chestTweenActive = false;
 					_G.Settings.Farm["Auto Farm Chest Tween"] = false;
-					Library:Notify({Title = "KuKi Hub", Content = "Item especial encontrado!", Icon = "bell", Duration = 6});
+					Library:Notify({Title = "Xenon Hub", Content = "Item especial encontrado!", Icon = "bell", Duration = 6});
 					break;
 				end;
 				-- Vai ate o bau via TweenPlayer
@@ -8950,7 +8950,7 @@ task.spawn(function()
 			end;
 			if _G.ChestHopActive and _G.ChestHopCount >= _G.ChestHopLimit then
 				_G.ChestHopCount = 0;
-				Library:Notify({Title = "KuKi Hub", Content = "Chest Hop: limite atingido, trocando server...", Icon = "bell", Duration = 4});
+				Library:Notify({Title = "Xenon Hub", Content = "Chest Hop: limite atingido, trocando server...", Icon = "bell", Duration = 4});
 				task.wait(2);
 				local module = (loadstring(game:HttpGet("https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Server_Hop_Settings")))();
 				module:Teleport(game.PlaceId);
@@ -8981,7 +8981,7 @@ task.spawn(function()
 			if _isSpecialChestItem() then
 				_chestBypassActive = false;
 				_G.Settings.Farm["Auto Farm Chest Instant"] = false;
-				Library:Notify({Title = "KuKi Hub", Content = "Item especial encontrado! Chest Bypass parado.", Icon = "bell", Duration = 6});
+				Library:Notify({Title = "Xenon Hub", Content = "Item especial encontrado! Chest Bypass parado.", Icon = "bell", Duration = 6});
 				return;
 			end;
 			-- Snapshot dos baus presentes
@@ -9039,7 +9039,7 @@ task.spawn(function()
 		end;
 		if _G.ChestHopActive and _G.ChestHopCount >= _G.ChestHopLimit then
 			_G.ChestHopCount = 0;
-			Library:Notify({Title = "KuKi Hub", Content = "Chest Hop: trocando server...", Icon = "bell", Duration = 4});
+			Library:Notify({Title = "Xenon Hub", Content = "Chest Hop: trocando server...", Icon = "bell", Duration = 4});
 			task.wait(2);
 			local module = (loadstring(game:HttpGet("https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Server_Hop_Settings")))();
 			module:Teleport(game.PlaceId);
@@ -9598,7 +9598,7 @@ local function ShowResetConfirm()
 					if isfile(path) then writefile(path, "{}"); end;
 				end;
 			end);
-			Library:Notify({Title = "KuKi Hub", Content = "Settings resetados! Reexecute o script.", Icon = "bell", Duration = 6});
+			Library:Notify({Title = "Xenon Hub", Content = "Settings resetados! Reexecute o script.", Icon = "bell", Duration = 6});
 		end);
 
 		naoBtn.MouseButton1Click:Connect(function() closeGui(); end);
@@ -13649,7 +13649,7 @@ ShopTab:AddDropdown({
 local function BuyFightStyleFull(styleName)
 	local data = FightStyleNPCs[styleName];
 	if not data then
-		Library:Notify({Title = "KuKi Hub", Content = "Estilo nao encontrado: " .. tostring(styleName), Icon = "alert-triangle", Duration = 4});
+		Library:Notify({Title = "Xenon Hub", Content = "Estilo nao encontrado: " .. tostring(styleName), Icon = "alert-triangle", Duration = 4});
 		return;
 	end;
 	local plr = game.Players.LocalPlayer;
@@ -13702,7 +13702,7 @@ local function BuyFightStyleFull(styleName)
 	pcall(function()
 		(game:GetService("ReplicatedStorage")).Remotes.CommF_:InvokeServer(data.buy, true);
 	end);
-	Library:Notify({Title = "KuKi Hub", Content = "Compra enviada: " .. styleName, Icon = "check", Duration = 4});
+	Library:Notify({Title = "Xenon Hub", Content = "Compra enviada: " .. styleName, Icon = "check", Duration = 4});
 end;
 
 ShopTab:AddButton({
@@ -14048,7 +14048,7 @@ TeleportTab:AddToggle({
 							if hrp and (hrp.Position - destCF.p).Magnitude < 20 then
 								-- Chegou! Para o loop
 								_G.BypassTeleportActive = false;
-								Library:Notify({Title = "KuKi Hub", Content = "Chegou em: " .. _G.SelectIsland, Icon = "map-pin", Duration = 4});
+								Library:Notify({Title = "Xenon Hub", Content = "Chegou em: " .. _G.SelectIsland, Icon = "map-pin", Duration = 4});
 							end;
 						end;
 					end;
@@ -15975,7 +15975,7 @@ spawn(function()
 						hrp.CFrame = v.CFrame;
 						task.wait(0.2);
 						pcall(function()
-							Library:Notify({Title = "KuKi Hub", Content = "Quest completa!", Icon = "bell", Duration = 6});
+							Library:Notify({Title = "Xenon Hub", Content = "Quest completa!", Icon = "bell", Duration = 6});
 						end);
 						_G.AutoBlueGear = false;
 						if _G.Settings and _G.Settings.SeaStack then _G.Settings.SeaStack["Auto Blue Gear"] = false; (getgenv()).SaveSetting(); end;
@@ -15987,7 +15987,7 @@ spawn(function()
 						hrp.CFrame = v.CFrame;
 						task.wait(0.2);
 						pcall(function()
-							Library:Notify({Title = "KuKi Hub", Content = "Quest completa!", Icon = "bell", Duration = 6});
+							Library:Notify({Title = "Xenon Hub", Content = "Quest completa!", Icon = "bell", Duration = 6});
 						end);
 						_G.AutoBlueGear = false;
 						if _G.Settings and _G.Settings.SeaStack then _G.Settings.SeaStack["Auto Blue Gear"] = false; (getgenv()).SaveSetting(); end;
