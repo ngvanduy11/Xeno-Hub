@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/attack-module.lua"))()
 local Y = game.Players;
 local d = Y.LocalPlayer;
 local R = d.Character.HumanoidRootPart;
@@ -906,7 +907,7 @@ spawn(function()
 					local Y = Instance.new("Highlight");
 					Y.Name = "highlight";
 					Y.Enabled = true;
-					Y.FillColor = Color3.fromRGB(0, 255, 255);
+					Y.FillColor = Color3.fromRGB(120, 50, 200);
 					Y.OutlineColor = Color3.fromRGB(255, 255, 255);
 					Y.FillTransparency = .5;
 					Y.OutlineTransparency = .2;
@@ -1710,37 +1711,37 @@ local rz;
 local az;
 local wz = {};
 local Fz = {
-		["Border Color"] = Color3.fromRGB(0, 255, 255),
+		["Border Color"] = Color3.fromRGB(120, 50, 200),
 		["Click Effect Color"] = Color3.fromRGB(230, 230, 230),
 		["Setting Icon Color"] = Color3.fromRGB(230, 230, 230),
-		["Logo Image"] = "rbxassetid://136485684668174",
+		["Logo Image"] = "rbxassetid://94628814063273",
 		["Search Icon Color"] = Color3.fromRGB(255, 255, 255),
-		["Search Icon Highlight Color"] = Color3.fromRGB(0, 255, 255),
+		["Search Icon Highlight Color"] = Color3.fromRGB(120, 50, 200),
 		["GUI Text Color"] = Color3.fromRGB(230, 230, 230),
 		["Text Color"] = Color3.fromRGB(230, 230, 230),
 		["Placeholder Text Color"] = Color3.fromRGB(178, 178, 178),
-		["Title Text Color"] = Color3.fromRGB(0, 255, 255),
+		["Title Text Color"] = Color3.fromRGB(120, 50, 200),
 		["Background Main Color"] = Color3.fromRGB(15, 15, 15),
 		["Background 1 Color"] = Color3.fromRGB(28, 28, 34),
 		["Background 1 Transparency"] = .25,
 		["Background 2 Color"] = Color3.fromRGB(90, 90, 90),
 		["Background 3 Color"] = Color3.fromRGB(20, 20, 20),
 		["Background Image"] = "",
-		["Page Selected Color"] = Color3.fromRGB(0, 255, 255),
-		["Section Text Color"] = Color3.fromRGB(0, 255, 255),
-		["Section Underline Color"] = Color3.fromRGB(0, 255, 255),
-		["Toggle Border Color"] = Color3.fromRGB(0, 255, 255),
+		["Page Selected Color"] = Color3.fromRGB(120, 50, 200),
+		["Section Text Color"] = Color3.fromRGB(120, 50, 200),
+		["Section Underline Color"] = Color3.fromRGB(120, 50, 200),
+		["Toggle Border Color"] = Color3.fromRGB(120, 50, 200),
 		["Toggle Checked Color"] = Color3.fromRGB(230, 230, 230),
 		["Toggle Desc Color"] = Color3.fromRGB(185, 185, 185),
 		["Button Color"] = Color3.fromRGB(35, 35, 35),
 		["Label Color"] = Color3.fromRGB(35, 35, 35),
 		["Dropdown Icon Color"] = Color3.fromRGB(230, 230, 230),
-		["Dropdown Selected Color"] = Color3.fromRGB(0, 255, 255),
-		["Dropdown Selected Check Color"] = Color3.fromRGB(0, 255, 255),
-		["Textbox Highlight Color"] = Color3.fromRGB(0, 255, 255),
-		["Box Highlight Color"] = Color3.fromRGB(0, 255, 255),
+		["Dropdown Selected Color"] = Color3.fromRGB(120, 50, 200),
+		["Dropdown Selected Check Color"] = Color3.fromRGB(120, 50, 200),
+		["Textbox Highlight Color"] = Color3.fromRGB(120, 50, 200),
+		["Box Highlight Color"] = Color3.fromRGB(120, 50, 200),
 		["Slider Line Color"] = Color3.fromRGB(45, 22, 67),
-		["Slider Highlight Color"] = Color3.fromRGB(0, 255, 255),
+		["Slider Highlight Color"] = Color3.fromRGB(120, 50, 200),
 		["Tween Animation 1 Speed"] = Rz and 0 or .25,
 		["Tween Animation 2 Speed"] = Rz and 0 or .5,
 		["Tween Animation 3 Speed"] = Rz and 0 or .1,
@@ -1827,7 +1828,7 @@ local gz = Instance.new("ImageButton", nz.HideGui);
 gz.BorderSizePixel = 0;
 gz.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
 gz.AnchorPoint = Vector2.new(0, 1);
-gz.Image = "rbxassetid://136485684668174";
+gz.Image = "rbxassetid://94628814063273";
 gz.Size = UDim2.new(0, 50, 0, 50);
 gz.BorderColor3 = Color3.fromRGB(0, 0, 0);
 gz.Position = UDim2.new(.01, 0, .99, 0);
@@ -1839,7 +1840,7 @@ local zz = Instance.new("UICorner", gz);
 zz.CornerRadius = UDim.new(1, 8);
 local iz = Instance.new("UIStroke", gz);
 iz.Thickness = .6;
-iz.Color = Color3.fromRGB(0, 255, 255);
+iz.Color = Color3.fromRGB(120, 50, 200);
 function nz.Getcolor(Y)
 	return { math.floor(Y.r * 255), math.floor(Y.g * 255), math.floor(Y.b * 255) };
 end;
@@ -1919,7 +1920,7 @@ local Uz = function(Y)
 		I.BackgroundColor3 = Color3.fromRGB(230, 230, 230);
 		I.BackgroundTransparency = 1.0;
 		I.Size = UDim2.new(1, 0, 1, 0);
-		I.Image = "rbxassetid://129781592728096";
+		I.Image = "rbxassetid://94628814063273";
 		I.ImageRectOffset = Vector2.new(284, 4);
 		I.ImageRectSize = Vector2.new(24, 24);
 		I.ImageColor3 = dz.UIColor["Search Icon Color"];
@@ -2017,7 +2018,7 @@ function Kz.CreateMain(Y)
 	r.Position = UDim2.new(.5, 0, .5, 0);
 	r.Selectable = true;
 	r.Size = UDim2.new(1, 30, 1, 30);
-	r.Image = "rbxassetid://129781592728096";
+	r.Image = "rbxassetid://94628814063273";
 	r.ScaleType = Enum.ScaleType.Slice;
 	r.SliceCenter = Rect.new(15, 15, 175, 175);
 	r.SliceScale = 1.3;
@@ -2028,7 +2029,7 @@ function Kz.CreateMain(Y)
 	local U = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[2]);
 	local C = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[3]);
 	local v = i .. ("," .. (U .. ("," .. C)));
-	M.Text = "<font color=\"rgb(" .. (v .. ")\">Gay Hub </font> : Blox Fruits");
+	M.Text = "<font color=\"rgb(" .. (v .. ")\">Xeno Hub </font> : Blox Fruits");
 	z = Instance.new("ImageLabel");
 	z.Name = "MainContainer";
 	z.Parent = Q;
@@ -2041,7 +2042,7 @@ function Kz.CreateMain(Y)
 	m.Transparency = .8;
 	dz.ReadyForGuiLoaded = true;
 	local y = Instance.new("ImageLabel", z);
-	y.Image = "rbxassetid://131407996827614";
+	y.Image = "rbxassetid://94628814063273";
 	y.BackgroundTransparency = 1;
 	y.ImageTransparency = .8;
 	y.Position = UDim2.new(0, -50, 0, -80);
@@ -2074,7 +2075,7 @@ function Kz.CreateMain(Y)
 	F.BackgroundTransparency = 1.0;
 	F.Position = UDim2.new(0, 5, 0, dz.T1 and 5 or 0);
 	F.Size = UDim2.new(0, dz.T1 and 30 or 25, 0, dz.T1 and 15 or 25);
-	F.Image = "rbxassetid://136485684668174";
+	F.Image = "rbxassetid://94628814063273";
 	M.Name = "TextLabelMain";
 	M.Parent = w;
 	M.BackgroundColor3 = Color3.fromRGB(230, 230, 230);
@@ -2091,7 +2092,7 @@ function Kz.CreateMain(Y)
 	local c = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[2]);
 	local H = tostring((nz.Getcolor(dz.UIColor["Title Text Color"]))[3]);
 	local S = b .. ("," .. (c .. ("," .. H)));
-	M.Text = "<font color=\"rgb(" .. (S .. ")\">Gay Hub </font> : Blox Fruits");
+	M.Text = "<font color=\"rgb(" .. (S .. ")\">Xeno Hub </font> : Blox Fruits");
 	K.Name = "Background1";
 	K.Parent = g;
 	K.Position = UDim2.new(0, 5, 0, 0);
@@ -2177,7 +2178,7 @@ function Kz.CreateMain(Y)
 	L.BackgroundTransparency = 1.0;
 	L.Position = UDim2.new(.5, 0, .5, 0);
 	L.Size = UDim2.new(0, 16, 0, 16);
-	L.Image = "rbxassetid://8154282545";
+	L.Image = "rbxassetid://94628814063273";
 	L.ImageColor3 = dz.UIColor["Search Icon Color"];
 	P.Name = "Search Button";
 	P.Parent = k;
@@ -2366,7 +2367,7 @@ function Kz.CreateMain(Y)
 		y.BackgroundTransparency = 1.0;
 		y.Position = UDim2.new(.5, 0, .5, 0);
 		y.Size = UDim2.new(0, 16, 0, 16);
-		y.Image = "rbxassetid://8154282545";
+		y.Image = "rbxassetid://122325778895055";
 		y.ImageColor3 = dz.UIColor["Search Icon Color"];
 		b.Name = "Search Button";
 		b.Parent = m;
@@ -2587,7 +2588,7 @@ function Kz.CreateMain(Y)
 				R.Position = UDim2.new(.5, 0, .5, 0);
 				R.Size = UDim2.new(1, -4, 1, -4);
 				R.ZIndex = 2;
-				R.Image = "rbxassetid://3926307971";
+				R.Image = "rbxassetid://122325778895055";
 				R.ImageRectOffset = Vector2.new(84, 44);
 				R.ImageRectSize = Vector2.new(36, 36);
 				R.ImageTransparency = 1;
@@ -2693,7 +2694,7 @@ function Kz.CreateMain(Y)
 				n.Name = "check";
 				n.Parent = K;
 				n.AnchorPoint = Vector2.new(.5, .5);
-				n.BackgroundColor3 = Color3.fromRGB(0, 255, 255);
+				n.BackgroundColor3 = Color3.fromRGB(120, 50, 200);
 				n.BackgroundTransparency = 0;
 				n.Position = UDim2.new(.5, 0, .5, 0);
 				n.Size = UDim2.new(0, 0, 0, 0);
@@ -2810,7 +2811,7 @@ function Kz.CreateMain(Y)
 				r.BackgroundTransparency = 1;
 				r.SelectionOrder = 0;
 				r.SizeConstraint = Enum.SizeConstraint.RelativeXY;
-				r.BackgroundColor3 = Color3.fromRGB(0, 255, 255);
+				r.BackgroundColor3 = Color3.fromRGB(120, 50, 200);
 				local a = Instance.new("Frame", r);
 				a.LayoutOrder = 0;
 				a.BorderMode = Enum.BorderMode.Outline;
@@ -2857,7 +2858,7 @@ function Kz.CreateMain(Y)
 				n.Draggable = false;
 				n.RichText = false;
 				n.SelectionOrder = 0;
-				n.BackgroundColor3 = Color3.fromRGB(0, 255, 255);
+				n.BackgroundColor3 = Color3.fromRGB(120, 50, 200);
 				n.BorderMode = Enum.BorderMode.Outline;
 				n.TextStrokeColor3 = Color3.new(0, 0, 0);
 				n.AnchorPoint = Vector2.new(0, 0);
@@ -2891,7 +2892,7 @@ function Kz.CreateMain(Y)
 				I.Style = Enum.FrameStyle.Custom;
 				I.Position = UDim2.new(1, -8, .5, 0);
 				I.SelectionOrder = 0;
-				I.BackgroundColor3 = Color3.fromRGB(0, 255, 255);
+				I.BackgroundColor3 = Color3.fromRGB(120, 50, 200);
 				local W = Instance.new("UICorner", I);
 				W.CornerRadius = UDim.new(0, 12);
 				local N = Instance.new("UIGradient", I);
@@ -2917,7 +2918,7 @@ function Kz.CreateMain(Y)
 				D.SelectionOrder = 0;
 				D.TextYAlignment = Enum.TextYAlignment.Center;
 				D.TextScaled = false;
-				D.BackgroundColor3 = Color3.fromRGB(0, 255, 255);
+				D.BackgroundColor3 = Color3.fromRGB(120, 50, 200);
 				D.BorderMode = Enum.BorderMode.Outline;
 				D.Selectable = true;
 				D.AnchorPoint = Vector2.new(0, 0);
@@ -2987,7 +2988,7 @@ function Kz.CreateMain(Y)
 				g.Position = UDim2.new(.5, 0, .5, 0);
 				g.SliceScale = 1;
 				g.BorderSizePixel = 1;
-				g.BackgroundColor3 = Color3.fromRGB(0, 255, 255);
+				g.BackgroundColor3 = Color3.fromRGB(120, 50, 200);
 				D.MouseButton1Click:Connect(function()
 					Q();
 				end);
