@@ -15,7 +15,7 @@ local T1UIColor = {
 	["Border Color"] = Color3.fromRGB(180, 0, 0),              -- Bright Red
 	["Click Effect Color"] = Color3.fromRGB(200, 200, 200),
 	["Setting Icon Color"] = Color3.fromRGB(200, 200, 200),
-	["Logo Image"] = "rbxassetid://82324407067386",
+	["Logo Image"] = "rbxassetid://94628814063273",
 	["Search Icon Color"] = Color3.fromRGB(200, 200, 200),
 	["Search Icon Highlight Color"] = Color3.fromRGB(180, 0, 0), -- Red
 	["GUI Text Color"] = Color3.fromRGB(220, 220, 220),
@@ -526,7 +526,7 @@ function Library:CreateWindow(Setting)
 	maingui.Position = UDim2.new(0.5, 0, 0.5, 0)
 	maingui.Selectable = true
 	maingui.Size = UDim2.new(1, 30, 1, 30)
-	maingui.Image = "rbxassetid://8068653048"
+	maingui.Image = "rbxassetid://94628814063273"
 	maingui.ScaleType = Enum.ScaleType.Slice
 	maingui.SliceCenter = Rect.new(15, 15, 175, 175)
 	maingui.SliceScale = 1.300
