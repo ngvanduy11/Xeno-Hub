@@ -10,7 +10,7 @@ local Window = WindUI:CreateWindow({
     HasOutline = false,
 });
 Window:EditOpenButton({
-    Title = "Xenon",
+    Title = "Xenon Hub",
     CornerRadius = UDim.new(0, 10),
     Draggable = false
 });
@@ -2375,7 +2375,7 @@ DiscordServerParagraph = Tabs.MainTab:Paragraph({
 		{
 			Title = "Copy Link",
 			Callback = function()
-				setclipboard("https://discord.gg/BJVQqMtZ2A");
+				setclipboard("https://discord.gg/FYz8wpMVHn");
 				WindUI:Notify({
 					Title = "Notification",
 					Content = "Copied",
