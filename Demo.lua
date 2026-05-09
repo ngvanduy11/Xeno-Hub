@@ -1,8 +1,8 @@
 local WindUI = (loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua")))();
 local Window = WindUI:CreateWindow({
-    Title = "ECLIPSE LIXO DEOBF BY ARAUJO",
-    Author = "By 1x1x1x1x1x1 And David Baszucki",
-    Folder = "Eclipse Lunar Gen4",
+    Title = "Xenon Hub ",
+    Author = "By Van Duy",
+    Folder = "Xenon Hub Demo",
     Size = UDim2.fromOffset(520, 300),
     Transparent = true,
     Theme = "Sky",
@@ -10,7 +10,7 @@ local Window = WindUI:CreateWindow({
     HasOutline = false,
 });
 Window:EditOpenButton({
-    Title = "☄️Eclipse Hub☄️",
+    Title = "Xenon",
     CornerRadius = UDim.new(0, 10),
     Draggable = false
 });
@@ -353,16 +353,16 @@ _G.Settings = {
 };
 (getgenv()).Load = function()
 	if readfile and writefile and isfile and isfolder then
-		if not isfolder("Relz Hub New") then
-			makefolder("Relz Hub New");
+		if not isfolder("Xenon Hub New") then
+			makefolder("Xenon Hub New");
 		end;
-		if not isfolder("Relz Hub New/Blox Fruits/") then
-			makefolder("Relz Hub New/Blox Fruits/");
+		if not isfolder("Xenon Hub New/Blox Fruits/") then
+			makefolder("Xenon Hub New/Blox Fruits/");
 		end;
-		if not isfile(("Relz Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
-			writefile("Relz Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(_G.Settings));
+		if not isfile(("Xenon Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
+			writefile("Xenon Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(_G.Settings));
 		else
-			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Relz Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json"));
+			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Xenon Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json"));
 			for i, v in pairs(Decode) do
 				_G.Settings[i] = v;
 			end;
@@ -374,7 +374,7 @@ _G.Settings = {
 end;
 (getgenv()).SaveSetting = function()
 	if readfile and writefile and isfile and isfolder then
-		if not isfile(("Relz Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
+		if not isfile(("Xenon Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json")) then
 			(getgenv()).Load();
 		else
 			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Relz Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json"));
@@ -382,7 +382,7 @@ end;
 			for i, v in pairs(_G.Settings) do
 				Array[i] = v;
 			end;
-			writefile("Relz Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
+			writefile("Xenon Hub New/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
 		end;
 	else
 		return warn("Status : Undetected Executor");
